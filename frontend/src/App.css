@@ -1,20 +1,21 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 3rem;
   text-align: center;
 }
 
 /* App-specific styles */
 .container {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 0.5rem;
-  background-color: white;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+  background-color: #1a202c;
+  padding: 2rem;
 }
 
 @media (prefers-color-scheme: dark) {
   .container {
     background-color: #1a202c;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
   }
 }

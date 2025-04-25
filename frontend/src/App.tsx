@@ -127,11 +127,11 @@ function App() {
   };
 
   return (
-    <div className="container max-w-md p-4 mx-auto mt-10">
-      <h1 className="mb-6 text-2xl font-bold text-center text-gray-800 dark:text-white">Todo App</h1>
+    <div className="container max-w-xl p-8 mx-auto mt-10 rounded-lg shadow-lg">
+      <h1 className="mb-8 text-3xl font-bold text-center text-white">Todo App</h1>
       
       {error && (
-        <div className="p-3 mb-4 text-sm text-yellow-800 bg-yellow-100 rounded dark:bg-yellow-900 dark:text-yellow-200">
+        <div className="p-4 mb-6 text-sm text-yellow-800 bg-yellow-100 rounded-lg dark:bg-yellow-900 dark:text-yellow-200">
           {error}
         </div>
       )}
@@ -139,8 +139,8 @@ function App() {
       <TodoForm addTodo={addTodo} />
       
       {loading ? (
-        <div className="flex justify-center">
-          <div className="w-6 h-6 border-t-2 border-b-2 border-blue-500 rounded-full animate-spin"></div>
+        <div className="flex justify-center p-6">
+          <div className="w-8 h-8 border-t-2 border-b-2 border-blue-500 rounded-full animate-spin"></div>
         </div>
       ) : (
         <TodoList
